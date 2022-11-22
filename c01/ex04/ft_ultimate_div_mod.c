@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noellachehab <marvin@42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/22 14:38:03 by noellachehab      #+#    #+#             */
-/*   Updated: 2022/11/22 14:47:58 by noellachehab     ###   ########.fr       */
+/*   Created: 2022/11/22 14:46:40 by noellachehab      #+#    #+#             */
+/*   Updated: 2022/11/22 15:09:06 by noellachehab     ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_swap(int *a, int *b)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int	temp;
+	int	div;
+	int	mod;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
 }
