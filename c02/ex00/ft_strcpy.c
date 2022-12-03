@@ -18,4 +18,5 @@ char	*ft_strcpy(char *dest, char *src)
 		src++;
 	}
 	*src = 0;
+	return (dest);
 }
