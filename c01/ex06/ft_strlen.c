@@ -6,7 +6,7 @@
 /*   By: noellachehab <marvin@42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 15:13:43 by noellachehab      #+#    #+#             */
-/*   Updated: 2022/11/22 15:20:47 by noellachehab     ###   ########.fr       */
+/*   Updated: 2022/12/06 10:25:16 by jihanleee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -18,7 +18,6 @@ int	ft_strlen(char *str)
 	count = 0;
 	while (*str)
 	{
-		write(1, str, 1);
 		count++;
 		str++;
 	}
