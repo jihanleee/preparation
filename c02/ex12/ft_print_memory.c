@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noellachehab <marvin@42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -93,12 +93,4 @@ void	ft_print_memory(void *addr, unsigned int size)
 		i -= 16;
 		addr += 16;
 	}
-}
-
-int main()
-{
-	void	*pa;
-	char	*a = "bonjour les aminches, fuck yo mamamamamamamamamamama";
-	ft_print_memory(a, 0);
-	return (0);
 }
