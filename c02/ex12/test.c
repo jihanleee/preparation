@@ -6,7 +6,7 @@
 /*   By: noellachehab <marvin@42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 13:06:38 by noellachehab      #+#    #+#             */
-/*   Updated: 2022/12/12 00:48:37 by jihanleee        ###   ########.fr       */
+/*   Updated: 2022/12/12 21:35:33 by jihanleee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -98,7 +98,7 @@ void	ft_print_memory(void *addr, unsigned int size)
 int main()
 {
 	void	*pa;
-	char	*a = "bonjour les aminches, fuck yo mamamamamamamamamamama";
-	ft_print_memory(a, 0);
+	char	*a;
+	ft_print_memory(a, 32000);
 	return (0);
 }
