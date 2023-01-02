@@ -6,14 +6,14 @@
 /*   By: jihanleee <sbll22006@naver.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 22:10:35 by jihanleee         #+#    #+#             */
-/*   Updated: 2022/12/23 22:10:38 by jihanleee        ###   ########.fr       */
+/*   Updated: 2023/01/02 18:46:06 by jihanleee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
 void	ft_putstr(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		write(1, str, 1);
 		str++;
