@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_ten_queens_puzzle.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jihanleee <sbll22006@naver.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/04 13:25:26 by jihanleee         #+#    #+#             */
-/*   Updated: 2023/01/04 13:25:59 by jihanleee        ###   ########.fr       */
+/*   Created: 2023/01/04 13:26:24 by jihanleee         #+#    #+#             */
+/*   Updated: 2023/01/04 13:28:50 by jihanleee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
+
 void	ft_putposition(int *position)
 {
-	int	i;
+	int		i;
 	char	c[11];
+
 	i = 0;
 	while (i <= 9)
 	{
@@ -48,14 +49,14 @@ int	ft_is_possible(int depth, int *position, int *used, int row)
 	return (1);
 }
 
-
-
 /* 'depth' is the value of current depth of ft_dfs function.
  * '*position' is the pointer of 'position' array. position[n] is the row
  *  on which the queen is placed in nth column of the chess board.
  *  '*used' is a pointer of used array.
- *  if used[row] == 1, it means that nth row of the chessboard is already occupied by a queen.
- *  '*pcount' is the pointer of count. ft_dfs increaments 'count' of ft_ten_queens_puzzle via '*pcount'
+ *  if used[row] == 1, it means that nth row of
+ *  the chessboard is already occupied by a queen.
+ *  '*pcount' is the pointer of count.
+ *  ft_dfs increaments 'count' of ft_ten_queens_puzzle via '*pcount'
  *  to count the number of all the possible solutions.
  */
 void	ft_dfs(int depth, int *position, int *used)
@@ -90,7 +91,7 @@ int	ft_ten_queens_puzzle(void)
 	int	i;
 
 	i = 0;
-	while(i <= 9)
+	while (i <= 9)
 	{
 		position[i] = -1;
 		used[i] = 0;
@@ -101,13 +102,4 @@ int	ft_ten_queens_puzzle(void)
 	ft_dfs(0, position, used);
 	count = position[10];
 	return (count);
-}
-
-int	main()
-{
-	int	a;
-
-	a = ft_ten_queens_puzzle();
-	printf("%d", a);
-	return 0;
 }
