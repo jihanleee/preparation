@@ -32,6 +32,8 @@ int	ft_checkbase(char *base)
 		return (size);
 }
 
+/* If char c is in char *base, returns the index of the location.
+if char c is not in char *base, returns -1. */
 int	ft_isinbase(char *base, char c)
 {
 	int	location;
@@ -46,6 +48,10 @@ int	ft_isinbase(char *base, char c)
 	return (-1);
 }
 
+/* Converts a string which
+represents a number written in a certain number base
+that consists of char *base,
+into an int variable and returns it.*/
 int	ft_atoi(char *str, char *base)
 {
 	int	sign;
@@ -73,6 +79,9 @@ int	ft_atoi(char *str, char *base)
 	return (result * sign);
 }
 
+/* Returns the length of the string for a number written
+in a certain number base. int len does not include
+the NULL character and the sign. */
 int	ft_c_len(int nbr_int, char *base)
 {
 	int	len;
@@ -89,6 +98,9 @@ int	ft_c_len(int nbr_int, char *base)
 	return (len);
 }
 
+/* Writes a char array represents int nbr_int
+in the number base that consists of char *base,
+and assigns it in char *dest and returns its pointer. */
 char	*ft_itoc(int nbr_int, char *base)
 {
 	char	*dest;
