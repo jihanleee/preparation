@@ -6,7 +6,7 @@
 /*   By: noellachehab <marvin@42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 13:36:40 by noellachehab      #+#    #+#             */
-/*   Updated: 2022/12/01 13:42:27 by noellachehab     ###   ########.fr       */
+/*   Updated: 2023/01/09 23:04:42 by jihanleee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@ char	*ft_strcpy(char *dest, char *src)
 	while (src)
 	{
 		*dest = *src;
+		dest++;
 		src++;
 	}
-	*src = 0;
+	*dest = 0;
 	return (dest);
 }
