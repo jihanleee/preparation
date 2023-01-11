@@ -1,17 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_getchar.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noellachehab <marvin@42.fr>                +#+  +:+       +#+        */
+/*   By: jihanleee <sbll22006@naver.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/17 12:19:49 by noellachehab      #+#    #+#             */
-/*   Updated: 2022/11/17 12:52:49 by noellachehab     ###   ########.fr       */
+/*   Created: 2022/12/12 21:59:13 by jihanleee         #+#    #+#             */
+/*   Updated: 2022/12/12 22:25:50 by jihanleee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-
-void	ft_putchar(char c)
+int	ft_strcmp(char *s1, char *s2)
 {
-	write(1, &c, 1);
+	while (*s1 || *s2)
+	{
+		if (*s1 > *s2)
+			return (1);
+		else if (*s1 < *s2)
+			return (-1);
+		s1++;
+		s2++;
+	}
+	return (0);
 }
