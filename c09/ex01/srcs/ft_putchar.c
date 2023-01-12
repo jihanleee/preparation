@@ -1,25 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_getchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noellachehab <marvin@42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/22 15:13:43 by noellachehab      #+#    #+#             */
-/*   Updated: 2022/12/06 10:25:16 by jihanleee        ###   ########.fr       */
+/*   Created: 2022/11/17 12:19:49 by noellachehab      #+#    #+#             */
+/*   Updated: 2022/11/17 12:52:49 by noellachehab     ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+#include "ft.h"
 
-int	ft_strlen(char *str)
+void	ft_putchar(char c)
 {
-	int	count;
-
-	count = 0;
-	while (*str)
-	{
-		count++;
-		str++;
-	}
-	return (count);
+	write(1, &c, 1);
 }
